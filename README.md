@@ -25,6 +25,8 @@ jackson-core-2.13.4.jar (pkg:maven/com.fasterxml.jackson.core/jackson-core@2.13.
 pnpm start
 ```
 
+4. See generated output.xml
+
 ## Why?
 
 I hate to write owasp supressions manually, then I've created this script to write it down for me! 🤓
