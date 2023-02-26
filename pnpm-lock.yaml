@@ -6,6 +6,7 @@ specifiers:
   prettier: ^2.8.4
   prettier-plugin-packagejson: ^2.4.3
   tsx: ^3.12.3
+  typescript: ^4.9.5
   xml-js: ^1.6.11
 
 dependencies:
@@ -17,6 +18,7 @@ devDependencies:
   prettier: 2.8.4
   prettier-plugin-packagejson: 2.4.3_prettier@2.8.4
   tsx: 3.12.3
+  typescript: 4.9.5
 
 packages:
 
@@ -622,6 +624,12 @@ packages:
       '@esbuild-kit/esm-loader': 2.5.5
     optionalDependencies:
       fsevents: 2.3.2
+    dev: true
+
+  /typescript/4.9.5:
+    resolution: {integrity: sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==}
+    engines: {node: '>=4.2.0'}
+    hasBin: true
     dev: true
 
   /which/2.0.2:
