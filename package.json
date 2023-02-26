@@ -1,0 +1,25 @@
+{
+  "name": "owasp-to-xml",
+  "version": "1.0.0",
+  "description": "Transform your owasp vulnerabilities into XML supression",
+  "keywords": [],
+  "license": "MIT",
+  "author": {
+    "name": "Carlos Eduardo de Oliveira Paludetto",
+    "email": "ceo.paludetto@gmail.com"
+  },
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "tsx src/index.ts"
+  },
+  "dependencies": {
+    "date-fns": "^2.29.3",
+    "xml-js": "^1.6.11"
+  },
+  "devDependencies": {
+    "@types/node": "^18.14.1",
+    "prettier": "^2.8.4",
+    "prettier-plugin-packagejson": "^2.4.3",
+    "tsx": "^3.12.3"
+  }
+}
