@@ -4,7 +4,7 @@ import { ElementCompact, js2xml } from "xml-js";
 import { endOfMonth, format } from "date-fns";
 
 async function createOwaspSuppressions() {
-  const reg = /\([^,]*/;
+  const reg = /\([^(,|\))]*/;
   const content = await fs.readFile(resolve("input.txt"), "utf-8");
 
   const lines = content.split("\n");
