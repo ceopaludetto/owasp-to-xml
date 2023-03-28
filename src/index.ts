@@ -26,11 +26,10 @@ async function createOwaspSuppressions() {
 
   for (const line of lines) {
     const res = reg.exec(line);
+    if (!res?.[0] || line.trim() === "") continue; // ignore the line
 
     const [, cveStr] = line.split(/\)[\s]*\:/);
     const cves = cveStr.split(",").map((item) => item.trim());
-
-    if (!res?.[0] || line.trim() === "") continue; // ignore the line
 
     const pkg = res[0].replace("(", "").replace(/\./g, "\\.");
 
